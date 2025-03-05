@@ -30,7 +30,7 @@ void AMonsterSpwanMgr::OnOverlapBeginTriggerBox(AActor* OverlappedActor, AActor*
 			DetroryMonster();
 
 			GetWorld()->GetTimerManager().ClearTimer(SpawnMonsterTimerHandle);
-			GetWorld()->GetTimerManager().SetTimer(SpawnMonsterTimerHandle, this, &AMonsterSpwanMgr::SpawnMonsterTimmer, 3.f, true);
+			GetWorld()->GetTimerManager().SetTimer(SpawnMonsterTimerHandle, this, &AMonsterSpwanMgr::SpawnMonsterTimmer, 2.5f, true);
 			TempCurlevel++;
 		}
 		//UE_LOG(LogTemp, Warning, TEXT("OtherActor : %s"), *OtherActor->GetName());
